@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./points.css" />
+    <title>Pontos (Trote Solidário)</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="initialpage">
+        <a href="../index.html">⟵ Voltar</a>
+      </div>
+
+      <img src="./assets/logo1.png" alt="Logo trote Solidário" />
+
+      <div id="switch" onclick="togglemode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <h1>Calcule os pontos obtidos na Gincana</h1>
+      <div id="all">
+        <div>
+          <p>
+             Informe o total de cestas doadas (até 80)
+            <input type="number" id="baskets" />
+          </p>
+        </div>
+        <div>
+          <button onclick="baskets()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="points"></p>
+        <hr />
+        <div>
+          <p>
+             Informe o total de cestas extras doadas<input
+              type="number"
+              id="extrabaskets"
+            />
+          </p>
+        </div>
+        <div>
+          <button onclick="extrabaskets()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsx"></p>
+        <hr />
+        <div>
+          <p>
+             Informe quantas doações de sangue foram feitas
+            <input type="number" id="blood" />
+          </p>
+        </div>
+        <div>
+          <button onclick="blood()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsb"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de kits Alimentação (avulsos)
+            <input type="number" id="kits" />
+          </p>
+        </div>
+        <div>
+          <button onclick="kits()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsa"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de latas de suplemento (avulsos)
+            <input type="number" id="suplements" />
+          </p>
+        </div>
+        <div>
+          <button onclick="suplement()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointss"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de Pacote de Arroz 5kg (avulsos)
+            <input type="number" id="rice" />
+          </p>
+        </div>
+        <div>
+          <button onclick="rice()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsr"></p>
+        <hr />
+
+         <div>
+          <p>
+         Informe o total de Pacote de Arroz 1kg (avulsos)
+            <input type="number" id="rice1" />
+          </p>
+        </div>
+        <div>
+          <button onclick="rice1()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsr1"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de Pacote de Feijão 2kg (avulsos)
+            <input type="number" id="beans" />
+          </p>
+        </div>
+        <div>
+          <button onclick="beans()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsbe"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de Pacote de Feijão 1kg (avulsos)
+            <input type="number" id="beans1" />
+          </p>
+        </div>
+        <div>
+          <button onclick="beans1()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsbe1"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de Pacote de macarrão (avulsos)
+            <input type="number" id="pasta" />
+          </p>
+        </div>
+        <div>
+          <button onclick="pasta()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointsp"></p>
+        <hr />
+
+        <div>
+          <p>
+         Informe o total de garrafas de óleo 900ml (avulsos)
+            <input type="number" id="oil" />
+          </p>
+        </div>
+        <div>
+          <button onclick="oil()">Calcular Pontos</button>
+        </div>
+        <p>Resultado abaixo:</p>
+        <p id="pointso"></p>
+        
+
+      </div>
+
+      </ul>
+      <div id="social-links">
+        </a>
+        <a href="https://www.instagram.com/unifacef/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/@tvunifacef" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/school/uni-facef/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Developed by Guilherme Andrade <br/>
+        S.I student at Uni-FACEF
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    </div>
+    <script src="./points.js"></script>
+  </body>
+</html>
